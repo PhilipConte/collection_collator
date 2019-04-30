@@ -1,0 +1,1909 @@
+﻿<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#"/>
+    <Prefix name="Tip" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Tip/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="Fire" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Fire/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Scrub" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Scrub/"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="Mudslide" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Mudslide/"/>
+    <Prefix name="Chairlift" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Chairlift/"/>
+    <Prefix name="Escalator" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Escalator/"/>
+    <Prefix name="Storm_Surge" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#Storm_Surge/"/>
+    <Prefix name="Ontology1291596473876" IRI="http://www.semanticweb.org/ontologies/2010/11/Ontology1291596473876.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concepts and hierarchical relationships from four disaster databases are gathered and merged into a single CTR ontology.   Then it was revised to remove &apos;Unclassified&apos; part.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CTR Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is an ontology developed for disasters (e.g., man-made, natural) and disaster management domain. Especially, it is developed for the Crisis, Tragedy, and Recovery (CTR) Network project (www.ctrnet.net) using OWL.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Meteorological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flexible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robbery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_f984ccb4_76ee_47d9_8ccc_0d8deb026dce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escalator/Elevator_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_Accident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bibliographicReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mine_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tsunami"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Survival_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mine_Collapse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brush_Fire"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conflict_Based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mine_Explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piracy_and_Maritime_Terrorism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hurricane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Zealand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass_Movement_Wet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Change_in_Coastline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Highway_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scrub/Grassland_FIre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response_Professional_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extra_Tropical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mudslide/Mudflow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedConceptCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#International"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preparedness_Personal_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazardous_Materials_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrorism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#European_Union"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold_Wave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ground_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radiological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_be63455a_4884_40a4_b01e_3f1a80d157cf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire/Explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wild_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Injuries"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red_Cross/Red_Crescent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mine_Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublinInformationAndWarning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Principles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Austrailia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unexploded_Ordnance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subsidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hijacking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_States"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Air_Force_Emergency_Management_Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#International_Recovery_Platform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigation_Professional_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assassination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utility_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass_Murder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tunnel_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigation_Personal_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integrated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#externalCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avalanche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earthquake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft_Hijacking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Damage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinkhole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Systems_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organizations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seismic_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recovery_Personal_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crowd_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inundation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e80ac7ac_ed73_41d5_8774_c39dc4fdccef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prison_Incident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Missile_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collapse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peakAcceleration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bacterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airborne_Release"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waste_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Driven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blizzard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime_Collision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire_in_Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Railroad_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapons_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural_Disappearance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geophysical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recovery_Professional_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kidnapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industrial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#International_Association_of_Emergency_Managers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Railroad_Collision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chairlift/Tramway_Accident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lastModifiedDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime_Bridge_Collapse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipeline_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insect_Infestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collaborative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Space_Flight_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft_Emergency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drought"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submarine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tornado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_897c6ce1_674d_410c_8847_100e8d869086"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landslide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trapped_By_Ice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_Nations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preparedness_Professional_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Famine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster_Types"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazardous_Waste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power_Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comprehensive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oil_Spill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volcano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response_Personal_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Netherland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epidemic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#releaseDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Derailment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rocket_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychological"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civilian_Massacre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explosion_in_Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aerial_Bombardment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass_Movement_Dry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heat_Wave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_Main_Break"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft_Shot_Down"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft_Collision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_Weapons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parisitic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School_Shooting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnowStorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tropical_Storm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cyber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazardous_Materials"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prevention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tropical_Cyclone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal_Infestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Climatological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_69849ae4_2f83_4b0d_89a0_b0267b45ebc4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storm_Surge/Coastal_Flood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subway_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime_Explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bridge_Collapse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rock_Fall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civil_War"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter_Strike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poisoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grounding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Russia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethnic_Violence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazardous_Materials_Explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preparedness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maritime_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shooting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adrift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aircraft_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operationalCoordination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Progressive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hoax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#World_Bank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property_Destruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordinated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attempted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genocide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tip/Tailings_Pile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological_Terrorism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State_Conventional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_Thunderstorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#War"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Deaths"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Canada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#oldCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manmade"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Hurricane"/>
+        <Class IRI="#OWLClass_f984ccb4_76ee_47d9_8ccc_0d8deb026dce"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hurricane"/>
+        <Class IRI="#Tropical_Cyclone"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_f984ccb4_76ee_47d9_8ccc_0d8deb026dce"/>
+        <Class IRI="#Tropical_Cyclone"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Adrift"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aerial_Bombardment"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airborne_Release"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft"/>
+        <Class IRI="#Air"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Attack"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Collision"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Emergency"/>
+        <Class IRI="#Air"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Hijacking"/>
+        <Class IRI="#Air"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Shot_Down"/>
+        <Class IRI="#Air"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal_Infestation"/>
+        <Class IRI="#Infestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assassination"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attempted"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avalanche"/>
+        <Class IRI="#Mass_Movement_Wet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacterial"/>
+        <Class IRI="#Epidemic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological"/>
+        <Class IRI="#Natural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological_Terrorism"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blizzard"/>
+        <Class IRI="#Winter_Strike"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bombing"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bridge"/>
+        <Class IRI="#Railroad_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bridge_Collapse"/>
+        <Class IRI="#Collapse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brush_Fire"/>
+        <Class IRI="#Wild_Fire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Collapse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Change_in_Coastline"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemical"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemical_Attack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civil_War"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civilian_Massacre"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Climatological"/>
+        <Class IRI="#Natural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cold_Wave"/>
+        <Class IRI="#Extreme_Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaborative"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collapse"/>
+        <Class IRI="#Road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compound"/>
+        <Class IRI="#Disaster_Types"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comprehensive"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conflict_Based"/>
+        <Class IRI="#Manmade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinated"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crash"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crowd_Event"/>
+        <Class IRI="#Manmade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_Disappearance"/>
+        <Class IRI="#Compound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cyber"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dam"/>
+        <Class IRI="#Collapse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Damage"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Derailment"/>
+        <Class IRI="#Railroad_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster_Management"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster_Types"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diversion"/>
+        <Class IRI="#Nuclear_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drought"/>
+        <Class IRI="#Climatological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earthquake"/>
+        <Class IRI="#Seismic_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epidemic"/>
+        <Class IRI="#Biological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethnic_Violence"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explosion_in_Flight"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extra_Tropical"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_Temperature"/>
+        <Class IRI="#Climatological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Famine"/>
+        <Class IRI="#Compound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire_in_Flight"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flash"/>
+        <Class IRI="#Flood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flexible"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flood"/>
+        <Class IRI="#Meteorological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fog"/>
+        <Class IRI="#Climatological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest_Fire"/>
+        <Class IRI="#Wild_Fire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gale"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General"/>
+        <Class IRI="#Flood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genocide"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geophysical"/>
+        <Class IRI="#Natural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ground_Fire"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grounding"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hail"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazardous_Materials"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazardous_Materials_Explosion"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazardous_Materials_Fire"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazardous_Waste"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heat_Wave"/>
+        <Class IRI="#Extreme_Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Highway_Accident"/>
+        <Class IRI="#Road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hijacking"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hoax"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Systems_Failure"/>
+        <Class IRI="#Manmade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hurricane"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial"/>
+        <Class IRI="#Human_Systems_Failure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infestation"/>
+        <Class IRI="#Biological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insect_Infestation"/>
+        <Class IRI="#Infestation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integrated"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#International"/>
+        <Class IRI="#Organizations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inundation"/>
+        <Class IRI="#Climatological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kidnapping"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landslide"/>
+        <Class IRI="#Mass_Movement_Dry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manmade"/>
+        <Class IRI="#Disaster_Types"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime_Accident"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime_Bridge_Collapse"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime_Collision"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime_Explosion"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maritime_Fire"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mass_Movement_Dry"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mass_Movement_Wet"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mass_Murder"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteorological"/>
+        <Class IRI="#Natural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine_Accident"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine_Collapse"/>
+        <Class IRI="#Mine_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine_Explosion"/>
+        <Class IRI="#Mine_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine_Fire"/>
+        <Class IRI="#Mine_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missile_Accident"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation"/>
+        <Class IRI="#Phases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation_Personal_Activities"/>
+        <Class IRI="#Mitigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation_Professional_Activities"/>
+        <Class IRI="#Mitigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National"/>
+        <Class IRI="#Organizations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natural"/>
+        <Class IRI="#Disaster_Types"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_Accident"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_Attack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_Weapons"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_897c6ce1_674d_410c_8847_100e8d869086"/>
+        <Class IRI="#OWLClass_69849ae4_2f83_4b0d_89a0_b0267b45ebc4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_be63455a_4884_40a4_b01e_3f1a80d157cf"/>
+        <Class IRI="#OWLClass_897c6ce1_674d_410c_8847_100e8d869086"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e80ac7ac_ed73_41d5_8774_c39dc4fdccef"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f984ccb4_76ee_47d9_8ccc_0d8deb026dce"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occupation"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil_Spill"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organizations"/>
+        <Class IRI="#Disaster_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parisitic"/>
+        <Class IRI="#Epidemic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phases"/>
+        <Class IRI="#Disaster_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipeline_Accident"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piracy_and_Maritime_Terrorism"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poisoning"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_Plant"/>
+        <Class IRI="#Nuclear_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preparedness"/>
+        <Class IRI="#Phases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preparedness_Personal_Activities"/>
+        <Class IRI="#Preparedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preparedness_Professional_Activities"/>
+        <Class IRI="#Preparedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prevention"/>
+        <Class IRI="#Phases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principles"/>
+        <Class IRI="#Disaster_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prison_Incident"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professional"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Progressive"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property_Destruction"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychological"/>
+        <Class IRI="#Manmade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublinInformationAndWarning"/>
+        <Class IRI="#Prevention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radiological"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rail"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Railroad_Accident"/>
+        <Class IRI="#Rail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Railroad_Collision"/>
+        <Class IRI="#Railroad_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rain"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recovery"/>
+        <Class IRI="#Phases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recovery_Personal_Activities"/>
+        <Class IRI="#Recovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recovery_Professional_Activities"/>
+        <Class IRI="#Recovery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugees"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Response"/>
+        <Class IRI="#Phases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Response_Personal_Activities"/>
+        <Class IRI="#Response"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Response_Professional_Activities"/>
+        <Class IRI="#Response"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riot"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk_Driven"/>
+        <Class IRI="#Principles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robbery"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rock_Fall"/>
+        <Class IRI="#Mass_Movement_Dry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rocket_Attack"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School_Shooting"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seismic_Activity"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_Thunderstorm"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shooting"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinkhole"/>
+        <Class IRI="#Collapse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinking"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smog"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snow"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnowStorm"/>
+        <Class IRI="#Winter_Strike"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Space_Flight_Accident"/>
+        <Class IRI="#Air"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spill"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State_Conventional"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storm"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Submarine"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subsidence"/>
+        <Class IRI="#Mass_Movement_Dry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subway_Accident"/>
+        <Class IRI="#Rail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Survival_Failure"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrorism"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theft"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threat"/>
+        <Class IRI="#Terrorism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tornado"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <Class IRI="#Human_Systems_Failure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trapped_By_Ice"/>
+        <Class IRI="#Maritime_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tropical_Cyclone"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tropical_Storm"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tsunami"/>
+        <Class IRI="#Seismic_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tunnel_Accident"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unexploded_Ordnance"/>
+        <Class IRI="#Hazardous_Materials"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utility_Failure"/>
+        <Class IRI="#Industrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viral"/>
+        <Class IRI="#Epidemic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volcano"/>
+        <Class IRI="#Geophysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#War"/>
+        <Class IRI="#Conflict_Based"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waste_Accident"/>
+        <Class IRI="#Nuclear_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_Main_Break"/>
+        <Class IRI="#Road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weapons_Accident"/>
+        <Class IRI="#Nuclear_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild_Fire"/>
+        <Class IRI="#Climatological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter_Strike"/>
+        <Class IRI="#Storm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operationalCoordination"/>
+        <Class IRI="#Prevention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chairlift/Tramway_Accident"/>
+        <Class IRI="#Rail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escalator/Elevator_Accident"/>
+        <Class IRI="#Rail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire/Explosion"/>
+        <Class IRI="#Railroad_Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mudslide/Mudflow"/>
+        <Class IRI="#Mass_Movement_Wet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scrub/Grassland_FIre"/>
+        <Class IRI="#Wild_Fire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storm_Surge/Coastal_Flood"/>
+        <Class IRI="#Flood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tip/Tailings_Pile"/>
+        <Class IRI="#Collapse"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#Austrailia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#European_Union"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#International_Association_of_Emergency_Managers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#International_Recovery_Platform"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#New_Zealand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#The_Air_Force_Emergency_Management_Association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#The_Netherland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#United_Nations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#National"/>
+        <NamedIndividual IRI="#United_States"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#World_Bank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#International"/>
+        <NamedIndividual IRI="#Red_Cross/Red_Crescent"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <AnonymousIndividual nodeID="_:genid1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Country</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peakAcceleration"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">accelerogram</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">acceleration</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">displacement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">peakAcceleration</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">velocity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">displacement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <AnonymousIndividual nodeID="_:genid4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">accelerogram.peakAcceleration
+accelerogram.acceleration
+accelerogram.velocity
+accelerogram.displacement
+accelerogram.accelerograph
+tectonic.accretionaryWedge
+tectonic.fault..activefault
+aftershocks
+Earthquake.alluvium
+</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#comments"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collaborative</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers create and sustain broad and sincere relationships among individuals and organizations to encourage trust, advocate a team atmosphere, build consensus, and facilitate communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comprehensive</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers consider and take into account all hazards, all phases, all stakeholders and all impacts relevant to disasters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coordinated</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers synchronize the activities of all relevant stakeholders to achieve a common purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Disaster_Management</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vision  
+Emergency management seeks to promote safer, less vulnerable communities with the capacity to 
+cope with hazards and disasters. 
+
+Mission   
+Emergency management protects communities by coordinating and integrating all activities necessary 
+to build, sustain, and improve the capability to mitigate against, prepare for, respond to, and recover 
+from threatened or actual natural disasters, acts of terrorism, or other man-made disasters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disaster_Management</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Definition  
+Emergency management is the managerial function charged with creating the framework within which 
+communities reduce vulnerability to hazards and cope with disasters.  
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Disaster_Types</IRI>
+        <AnonymousIndividual nodeID="_:genid1"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Earthquake</IRI>
+        <AnonymousIndividual nodeID="_:genid2"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flexible</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers use creative and innovative approaches in solving disaster challenges.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Integrated</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers ensure unity of effort among all levels of government and all elements of a community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mitigation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mitigation_Personal_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Personal mitigation is mainly about knowing and avoiding unnecessary risks. This includes an assessment of possible risks to personal/family health and to personal property.
+
+One example of mitigation would be to avoid buying property that is exposed to hazards or waste, e.g., in a flood plain, in areas of subsidence or landslides. Home owners may not be aware of a property being exposed to a hazard until it strikes. However, specialists can be hired to conduct risk identification and assessment surveys. Purchase of insurance covering the most prominent identified risks is a common measure.
+
+Personal structural mitigation in earthquake prone areas includes installation of an Earthquake Valve to instantly shut off the natural gas supply to a property, seismic retrofits of property and the securing of items inside a building to enhance household seismic safety. The latter may include the mounting of furniture, refrigerators, water heaters and breakables to the walls, and the addition of cabinet latches. In flood prone areas houses can be built on poles/stilts, as in much of southern Asia. In areas prone to prolonged electricity black-outs installation of a generator would be an example of an optimal structural mitigation measure. The construction of storm cellars and fallout shelters are further examples of personal mitigative actions.
+
+Mitigation involves Structural and Non-structural measures taken to limit the impact of disasters.
+
+Structural Mitigation:-
+
+This involves proper layout of building, particularly to make it resistant to disasters.
+Non Structural Mitigation:-
+
+This involves measures taken other than improving the structure of building.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mitigation_Professional_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mitigation efforts are attempts to prevent hazards from developing into disasters altogether or to reduce the effects of disasters. The mitigation phase differs from the other phases in that it focuses on long-term measures for reducing or eliminating risk. The implementation of mitigation strategies is a part of the recovery process if applied after a disaster occurs.
+
+Mitigation measures can be structural or non-structural. Structural measures use technological solutions like flood levees and building retrofitting for earthquakes. Non-structural measures include legislation, land-use planning (e.g. the designation of non-essential land like parks to be used as flood zones), and insurance.
+
+Mitigation is the most cost-efficient method for reducing the effect of hazards although not always the most suitable. Mitigation includes providing regulations regarding evacuation, sanctions against those who refuse to obey the regulations (such as mandatory evacuations), and communication of risks to the public. Some structural mitigation measures may harm the ecosystem.
+
+A precursor to mitigation is the identification of risks. Physical risk assessment refers to identifying and evaluating hazards. The hazard-specific risk (Rh) combines a hazard&apos;s probability and effects. The equation below states that the hazard multiplied by the populations’ vulnerability to that hazard produces a risk Catastrophe modeling. The higher the risk, the more urgent that the vulnerabilities to the hazard are targeted by mitigation and preparedness. If, however, there is no vulnerability then there will be no risk, e.g. an earthquake occurring in a desert where nobody lives.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_69849ae4_2f83_4b0d_89a0_b0267b45ebc4</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_897c6ce1_674d_410c_8847_100e8d869086</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_be63455a_4884_40a4_b01e_3f1a80d157cf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tunisia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e80ac7ac_ed73_41d5_8774_c39dc4fdccef</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Revolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_f984ccb4_76ee_47d9_8ccc_0d8deb026dce</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Typhoon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Preparedness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Preparedness_Personal_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Personal preparedness focuses on preparing equipment and procedures for use when a disaster occurs, i.e., planning. Preparedness measures can take many forms including the construction of shelters, installation of warning devices, creation of back-up life-line services (e.g., power, water, sewage), and rehearsing evacuation plans.
+
+Two simple measures can help prepare the individual for sitting out the event or evacuating, as necessary. For evacuation, a disaster supplies kit may be prepared and for sheltering purposes a stockpile of supplies may be created. The preparation of a survival kit such as a &quot;72-hour kit&quot;, is often advocated by authorities. These kits may include food, medicine, flashlights, candles and money. Also, putting valuable items in safe area is also recommended.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Preparedness_Professional_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Preparedness is how we change behavior to limit the impact of disaster events on people. Preparedness is a continuous cycle of planning, managing, organizing, training, equipping, exercising, creating, evaluating, monitoring and improving activities to ensure effective coordination and the enhancement of capabilities of concerned organizations to prevent, protect against, respond to, recover from, create resources and mitigate the effects of natural disasters, acts of terrorism, and other man-made disasters.
+
+In the preparedness phase, emergency managers develop plans of action carefully to manage and counter their risks and take action to build the necessary capabilities needed to implement such plans. Common preparedness measures include:
+
+1. Communication plans with easily understandable terminology and methods.
+2. Proper maintenance and training of emergency services, including mass human resources such as community emergency response teams.
+3. Development and exercise of emergency population warning methods combined with emergency shelters and evacuation plans.
+4. Stockpiling, inventory, streamline foods supplies, and maintain other disaster supplies and equipment.
+5. Develop organizations of trained volunteers among civilian populations. Professional emergency workers are rapidly overwhelmed in mass emergencies so trained, organized, responsible volunteers are extremely valuable. Organizations like Community Emergency Response Teams and the Red Cross are ready sources of trained volunteers. The latter&apos;s emergency management system has gotten high ratings from both California, and the Federal Emergency Management Agency (FEMA).
+
+Another aspect of preparedness is casualty prediction, the study of how many deaths or injuries to expect for a given kind of event. This gives planners an idea of what resources need to be in place to respond to a particular kind of event.
+
+Emergency Managers in the planning phase should be flexible, and all encompassing – carefully recognizing the risks and exposures of their respective regions and employing unconventional, and atypical means of support. Depending on the region – municipal, or private sector emergency services can rapidly be depleted and heavily taxed. Non-governmental organizations that offer desired resources, i.e., transportation of displaced home-owners to be conducted by local school district buses, evacuation of flood victims to be performed by mutual aide agreements between fire departments and rescue squads, should be identified early in planning stages, and practiced with regularity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Professional</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers value a science and knowledge-based approach; based on education, training, experience, ethical practice, public stewardship and continuous improvement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Progressive</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers anticipate future disasters and take preventive and preparatory measures to build disaster-resistant and disaster-resilient communities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recovery</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recovery_Personal_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The recovery phase starts after the immediate threat to human life has subsided. During reconstruction it is recommended to consider the location or construction material of the property.
+
+The most extreme home confinement scenarios include war, famine and severe epidemics and may last a year or more. Then recovery will take place inside the home. Planners for these events usually buy bulk foods and appropriate storage and preparation equipment, and eat the food as part of normal life. A simple balanced diet can be constructed from vitamin pills, whole-meal wheat, beans, dried milk, corn, and cooking oil. One should add vegetables, fruits, spices and meats, both prepared and fresh-gardened, when possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recovery_Professional_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The aim of the recovery phase is to restore the affected area to its previous state. It differs from the response phase in its focus; recovery efforts are concerned with issues and decisions that must be made after immediate needs are addressed. Recovery efforts are primarily concerned with actions that involve rebuilding destroyed property, re-employment, and the repair of other essential infrastructure.
+
+Efforts should be made to &quot;build back better&quot;, aiming to reduce the pre-disaster risks inherent in the community and infrastructure. An important aspect of effective recovery efforts is taking advantage of a ‘window of opportunity’ for the implementation of mitigative measures that might otherwise be unpopular. Citizens of the affected area are more likely to accept more mitigative changes when a recent disaster is in fresh memory.
+
+In the United States, the National Response Plan dictates how the resources provided by the Homeland Security Act of 2002 will be used in recovery efforts. It is the Federal government that often provides the most technical and financial assistance for recovery efforts in the United States.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Response</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Response_Personal_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The response phase of an emergency may commence with search and rescue but in all cases the focus will quickly turn to fulfilling the basic humanitarian needs of the affected population. This assistance may be provided by national or international agencies and organisations. Effective coordination of disaster assistance is often crucial, particularly when many organizations respond and local emergency management agency (LEMA) capacity has been exceeded by the demand or diminished by the disaster itself.
+
+On a personal level the response can take the shape either of a shelter in place or an evacuation. In a shelter-in-place scenario, a family would be prepared to fend for themselves in their home for many days without any form of outside support. In an evacuation, a family leaves the area by automobile or other mode of transportation, taking with them the maximum amount of supplies they can carry, possibly including a tent for shelter. If mechanical transportation is not available, evacuation on foot would ideally include carrying at least three days of supplies and rain-tight bedding, a tarpaulin and a bedroll of blankets being the minimum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Response_Professional_Activities</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The response phase includes the mobilization of the necessary emergency services and first responders in the disaster area. This is likely to include a first wave of core emergency services, such as firefighters, police and ambulance crews. When conducted as a military operation, it is termed Disaster Relief Operation (DRO) and can be a follow-up to a Non-combatant evacuation operation (NEO). They may be supported by a number of secondary emergency services, such as specialist rescue teams.
+
+A well rehearsed emergency plan developed as part of the preparedness phase enables efficient coordination of rescue. Where required, search and rescue efforts commence at an early stage. Depending on injuries sustained by the victim, outside temperature, and victim access to air and water, the vast majority of those affected by a disaster will die within 72 hours after impact.
+
+Organizational response to any significant disaster – natural or terrorist-borne – is based on existing emergency management organizational systems and processes: the Federal Response Plan (FRP) and the Incident Command System (ICS). These systems are solidified through the principles of Unified Command (UC) and Mutual Aid (MA)
+
+There is a need for both discipline (structure, doctrine, process) and agility (creativity, improvisation, adaptability) in responding to a disaster. There is also the need to onboard and build an effective leadership team quickly to coordinate and manage efforts as they grow beyond first responders. The leader and team must formulate and implement a disciplined, iterative set of response plans, allowing initial coordinated responses that are vaguely right, adapting to new information and changes in circumstances as they arise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Risk_Driven</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergency managers use sound risk management principles (hazard identification, risk analysis, and impact analysis) in assigning priorities and resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
+        <AnonymousIndividual nodeID="_:genid4"/>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
