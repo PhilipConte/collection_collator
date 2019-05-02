@@ -1,4 +1,4 @@
-from .search_wikipedia import get_wiki_url, get_keyword, analyze_threshold, get_wiki_description, get_wiki_title
+from search_wikipedia import get_wiki_url, get_keyword, analyze_threshold, get_wiki_description, get_wiki_title
 
 
 most_relevant_keyword = ""
@@ -9,7 +9,6 @@ def process_row(description, wiki_page, collection_term):
         populate_wiki(wiki_page),  # Wikipedia
         populate_description(description, wiki_page,
                              collection_term),  # Description
-        populate_category(wiki_page),  # Tags
         populate_event_name(wiki_page),  # Event Name
     )
 
@@ -45,21 +44,6 @@ def populate_description(current_description, wiki_page, collection_term):
 
     except Exception as e:
         print("Error 2")
-        return None
-
-
-def populate_category(wiki_page):
-    """ populate category in spreadsheet from most relevant keyword detected in populate_description stored globally
-        returns content to be written to spreadsheet
-    """
-    global most_relevant_keyword
-    try:
-        if not most_relevant_keyword:
-            return " "  # Article has low ontological relevance. Category not included. in the spreadsheet
-        return most_relevant_keyword
-
-    except Exception as e:
-        print("category error")
         return None
 
 
