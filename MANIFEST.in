@@ -1,3 +1,4 @@
 include README.md
 include collection_collator/CTRontology.owl
 include collection_collator/stoplist.txt
+include collection_collator/tags.csv
