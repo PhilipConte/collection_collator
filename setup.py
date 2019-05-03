@@ -15,8 +15,11 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         'beautifulsoup4',
+        'media-wiki-parser',
         'pandas',
+        'pysolr',
         'wikipedia',
+        'wikitextparser',
         'wordninja',
     ],
     include_package_data=True,
