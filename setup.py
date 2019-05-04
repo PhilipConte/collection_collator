@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         'beautifulsoup4',
-        'media-wiki-parser',
+        'mediawiki-parser',
         'pandas',
         'pysolr',
         'wikipedia',
