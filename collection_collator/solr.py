@@ -1,14 +1,14 @@
 import pysolr
 import wikitextparser as wtp
 import logging
-from mediawiki_parser.preprocessor import make_parser as pre_parser
-from mediawiki_parser.html import make_parser as html_parser
+from mediawiki_parser.preprocessor import make_parser as wiki_pre_parser
+from mediawiki_parser.html import make_parser as wiki_html_parser
 
 logging.getLogger().setLevel(level=logging.ERROR)
 
 solr_instance = pysolr.Solr('http://liuqing.dlib.vt.edu:8983/solr/wikipedia')
-preprocessor = pre_parser({})
-parser = html_parser()
+wiki_pre_processor = wiki_pre_parser({})
+wiki_post_processor = wiki_html_parser()
 
 
 def search(terms):
@@ -25,8 +25,12 @@ def process(result):
             return None
         return process(new_result)
 
-    preprocessed_text = preprocessor.parse(description)
-    return parser.parse(preprocessed_text.leaves()).value
+    return wiki_parser(description)
+
+
+def wiki_parser(v):
+    return wiki_post_processor.parse(
+        wiki_pre_processor.parse(v).leaves()).value
 
 
 if __name__ == '__main__':
