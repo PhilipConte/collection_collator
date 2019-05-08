@@ -1,29 +1,7 @@
-import wikipedia
 from collections import Counter
 import re
 import sys
 import wordninja
-
-
-def get_wiki_page(term):
-    """ This returns a wiki page object.
-        Args:
-                term: Searches wikipedia with this term and returns a page, if found
-    """
-    if len(term) > 4:
-        # term = ' '.join(wordninja.split(term))
-        term = ' '.join(wordninja.split(term))
-    try:
-        pages = wikipedia.search(term)
-        if (len(pages) == 0):
-            return None
-        # Right now we just return the first page, some more logic could go into this
-        return wikipedia.page(pages[0].encode('UTF8'))
-    except Exception as e:
-        print("Error in searching for wikipedia page ' {}'\n".format(term))
-        print(
-            "PLEASE CONSIDER SEARCHING FOR THE TERMS:\n\n\n[[\n{}\n]]\n\n\n".format(e))
-        return None
 
 
 def get_wiki_content(wiki_page):
@@ -63,22 +41,6 @@ def get_wiki_description(wiki_page):
         # TODO possibly strip commas to fill in spreadsheet
         if most_relevant_keyword.upper() in line.upper():
             return "\"" + line + "\""
-
-
-def get_wiki_title(wiki_page):
-    """ This function just returns the title from a wiki_page
-        Args:
-                wiki_page: The wiki_page object to get the title from
-    """
-    return wiki_page.title.encode('UTF8')
-
-
-def get_wiki_url(wiki_page):
-    """ This function just returns the link from a wiki_page
-        Args:
-                wiki_page: The wiki_page object to get the link from
-    """
-    return str(wiki_page.url.encode('UTF8'))
 
 
 def analyze_threshold(threshold, wiki_page, most_relevant_keyword, collection_term):

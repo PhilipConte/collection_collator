@@ -5,12 +5,8 @@ most_relevant_keyword = ""
 
 
 def process_row(description, wiki_page, collection_term):
-    return (
-        populate_wiki(wiki_page),  # Wikipedia
-        populate_description(description, wiki_page,
+    return populate_description(description, wiki_page,
                              collection_term),  # Description
-        populate_event_name(wiki_page),  # Event Name
-    )
 
 
 def populate_wiki(wiki_page):
@@ -44,16 +40,4 @@ def populate_description(current_description, wiki_page, collection_term):
 
     except Exception as e:
         print("Error 2")
-        return None
-
-
-def populate_event_name(wiki_page):
-    """uses wikipedia article title to populate event name in spreadsheet
-       returns event name to be written to spreadsheet
-    """
-    try:
-        return get_wiki_title(wiki_page)
-
-    except Exception as e:
-        print("Error in generating Event Name")
         return None

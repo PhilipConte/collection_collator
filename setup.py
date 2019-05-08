@@ -18,7 +18,6 @@ setuptools.setup(
         'mediawiki-parser',
         'pandas',
         'pysolr',
-        'wikipedia',
         'wikitextparser',
         'wordninja',
     ],

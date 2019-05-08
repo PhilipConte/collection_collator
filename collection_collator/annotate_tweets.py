@@ -1,25 +1,29 @@
 import pandas as pd
 from get_tweets import gen_all
 from search_wikipedia import get_wiki_page
-from middleware import process_row
+from solr import search
+from middleware import populate_description
 
 tags_df = pd.read_csv('tags.csv')
 
 
 def wiki_lookup(row):
     """
-    returns a series of [wikipedia, Description, Event Name]
+    returns a series of [Description, Event Name]
     """
-    collection_term = row['Collection Terms']
+    terms = row['Collection Terms']
+    if len(term) > 4:
+        term = ' '.join(wordninja.split(term))
 
-    wiki_page = get_wiki_page(collection_term)
-    print('wiki_page: ' + str(bool(wiki_page)))
-    if not wiki_page:
+    name, description = search(terms)
+
+    print('wiki_page: ' + str(bool(name)))
+    if not name:
         print("[{}][{}] No Page Found for '{}' \n".format(
-            row['Database'], row['ID'], collection_term))
-        return pd.Series((None, row['Description'], None,))
-    else:
-        return pd.Series(process_row(row['Description'], wiki_page, collection_term))
+            row['Database'], row['ID'], row['Collection Terms']))
+        return pd.Series((row['Description'], None,))
+
+    return pd.Series((populate_description(row['Description'], wiki_page, collection_term), name,))
 
 
 def get_tags(row):
@@ -38,8 +42,7 @@ def get_tags(row):
 
 def annotate(path):
     df = gen_all()
-    df[['Wikipedia', 'Description',
-        'Event Name']] = df.apply(wiki_lookup, axis=1)
+    df[['Description', 'Event Name']] = df.apply(wiki_lookup, axis=1)
     df[['Tags', 'Category_1', 'Category_2', 'Category_3']
        ] = df.apply(get_tags, axis=1)
     df = df[['Database', 'ID', 'Source', 'Collection Terms', 'Wikipedia',
