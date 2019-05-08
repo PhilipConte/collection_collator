@@ -14,7 +14,18 @@ wiki_pre_processor = wiki_pre_parser({})
 wiki_post_processor = wiki_html_parser()
 
 
-def search(terms):
+def search(term):
+    """Returns: page_name, description"""
+    results = get_results(term)
+    if len(results) == 0:
+        return None, None
+
+    description = massage_soup(get_soup(results[0])).getText().strip()
+
+    return results[0]['title_cs'], description
+
+
+def get_results(terms):
     return solr_instance.search('title:('+terms+')').docs
 
 
@@ -50,7 +61,7 @@ def get_soup(result):
         return get_soup(result)
 
     return soup
-    
+
 
 def massage_soup(soup):
     first_tag = soup.find().find()
@@ -62,4 +73,5 @@ def massage_soup(soup):
 
 if __name__ == '__main__':
     import sys
-    print(massage_soup(get_soup(search(' '.join(sys.argv[1:]))[0])))
+    _, description = search(' '.join(sys.argv[1:]))
+    print(description)
