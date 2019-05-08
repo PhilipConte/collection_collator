@@ -3,6 +3,8 @@ import wikitextparser as wtp
 import logging
 from mediawiki_parser.preprocessor import make_parser as wiki_pre_parser
 from mediawiki_parser.html import make_parser as wiki_html_parser
+from bs4 import BeautifulSoup as bs
+
 
 logging.getLogger().setLevel(level=logging.ERROR)
 
@@ -15,17 +17,23 @@ def search(terms):
     return solr_instance.search('title:('+terms+')').docs
 
 
+def exact_search(name):
+    return solr_instance.search('title_cs:('+name+')').docs[0]
+
+
 def process(result):
+    print('process')
+    soup = to_html(result)
+    if soup.find().find().name == 'ol' \
+            and soup.find().find().find().text.startswith('REDIRECT'):
+        return process(exact_search(soup.find().find().find().text))
+
+    return soup
+
+
+def to_html(result):
     description = wtp.parse(result['text']).sections[0].contents
-
-    if description.startswith('#redirect [['):
-        new_page = description.split('[[')[1].split(']]')[0]
-        new_result = search(new_page)[0]
-        if new_result['title'] == result['title']:
-            return None
-        return process(new_result)
-
-    return wiki_parser(description)
+    return bs(wiki_parser(description), 'html.parser')
 
 
 def wiki_parser(v):
