@@ -4,6 +4,26 @@ import sys
 import wordninja
 
 
+def populate_description(current_description, wiki_page, collection_term):
+    """ populate description in spreadsheet using wikipedia library and keyword frequency threshold analytics
+        returns content to be populated for description field     
+    """
+    if current_description:
+        return current_description
+
+    try:
+        most_relevant_keyword = analyze_threshold(
+            3, wiki_page, get_keyword(wiki_page), collection_term)
+
+        if not most_relevant_keyword:
+            return None  # article has low ontological relevance
+        return get_wiki_description(wiki_page)
+
+    except Exception as e:
+        print("Error 2")
+        return None
+
+
 def get_wiki_content(wiki_page):
     """This function returns the content of the wikipage, in UTF8
         Args:

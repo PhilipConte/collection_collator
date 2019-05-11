@@ -1,8 +1,7 @@
 import pandas as pd
 from get_tweets import gen_all
-from search_wikipedia import get_wiki_page
+from search_wikipedia import get_wiki_page, populate_description
 from solr import search
-from middleware import populate_description
 
 tags_df = pd.read_csv('tags.csv')
 
