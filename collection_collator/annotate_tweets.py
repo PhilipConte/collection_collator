@@ -1,6 +1,7 @@
 import pandas as pd
+import wordninja
 from get_tweets import gen_all
-from search_wikipedia import get_wiki_page, populate_description
+from search_wikipedia import populate_description
 from solr import search
 
 tags_df = pd.read_csv('tags.csv')
@@ -11,18 +12,20 @@ def wiki_lookup(row):
     returns a series of [Description, Event Name]
     """
     terms = row['Collection Terms']
-    if len(term) > 4:
-        term = ' '.join(wordninja.split(term))
+    if len(terms) > 4:
+        terms = ' '.join(wordninja.split(terms))
+    print(row['Collection Terms']) # japan earthquake
+    name, full_text = search(terms)
 
-    name, description = search(terms)
-
-    print('wiki_page: ' + str(bool(name)))
-    if not name:
+    if not name or not full_text:
         print("[{}][{}] No Page Found for '{}' \n".format(
             row['Database'], row['ID'], row['Collection Terms']))
         return pd.Series((row['Description'], None,))
 
-    return pd.Series((populate_description(row['Description'], wiki_page, collection_term), name,))
+    if row['Description']:
+        return pd.Series((row['Description'], name,))
+
+    return pd.Series((populate_description(full_text, row['Collection Terms']), name,))
 
 
 def get_tags(row):
@@ -44,7 +47,7 @@ def annotate(path):
     df[['Description', 'Event Name']] = df.apply(wiki_lookup, axis=1)
     df[['Tags', 'Category_1', 'Category_2', 'Category_3']
        ] = df.apply(get_tags, axis=1)
-    df = df[['Database', 'ID', 'Source', 'Collection Terms', 'Wikipedia',
+    df = df[['Database', 'ID', 'Source', 'Collection Terms',
              'Description', 'Tags', 'Category_1', 'Category_2', 'Category_3',
              'Event Name', 'Create Time', 'Count']]
     df.to_csv(path, index=False)
