@@ -6,20 +6,17 @@ This project scrapes all the Digital Library collections from dlib.vt.edu
 
 For each collection, it searches wikipedia using its collection terms and grabs the corresponding wiki page and its description
 
-## Development
-### Installation
-cd into the uppermost directory and run
+## Installation
+clone the repository then pip install it
 ```bash
-python3 -m venv env
-source env/bin/activate
-
-pip install -e .
+pip install collection_collator
 ```
 
-### Usage
-You can directly run [solr.py](collection_collator/solr.py) from the command-line
-```bash
-cd collection_collator
+## Usage
+the package includes the script `annotate_tweets`
 
-python solr.py "my query here" # (quotes optional)
+Usage is as simple as:
+```bash
+annotate_tweets
 ```
+This will update the csv file `collection_collator/collection_collator/annotated.csv`
