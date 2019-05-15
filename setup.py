@@ -20,6 +20,7 @@ setuptools.setup(
         'pysolr',
         'wordninja',
     ],
+    scripts=['bin/annotate_tweets'],
     include_package_data=True,
     keywords='Virginia Tech Digital Library Research Laboratory Tweets',
     classifiers=("Programming Language :: Python :: 3",),

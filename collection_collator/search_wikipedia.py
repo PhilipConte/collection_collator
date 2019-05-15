@@ -1,11 +1,12 @@
 from collections import Counter
+from .resources import get_file
 
 
-with open('CTRontology.owl', 'r') as f:
+with open(get_file('CTRontology.owl'), 'r') as f:
     OWL = f.readlines()
 
 
-with open('stoplist.txt') as f:
+with open(get_file('stoplist.txt')) as f:
     STOP_LIST = f.read().split()
 
 
