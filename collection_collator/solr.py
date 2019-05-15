@@ -17,14 +17,30 @@ wiki_post_processor = wiki_html_parser()
 def search(term):
     """Returns: page_name, full_text"""
     try:
-        results = solr_instance.search('title:('+term+')', rows=1).docs
+        result = get_result(term)
     except:
         return None, None
-    
-    if not len(results):
+
+    if not result:
         return None, None
 
-    return results[0]['title_cs'], soup_to_text(get_soup(results[0]))
+    return result['title_cs'], soup_to_text(get_soup(result))
+
+
+def get_result(term):
+    results = solr_instance.search('title:('+term+')', rows=1).docs
+    if not len(results):
+        return None
+    result = results[0]
+
+    regex = r'#REDIRECT\s*?\[\[(.*?)\]\]'
+    redirect = re.search(regex, result['text'], re.IGNORECASE)
+    while redirect:
+        result = exact_search(redirect.group(1))
+        if not result:
+            return None
+        redirect = re.search(regex, result['text'], re.IGNORECASE)
+    return result
 
 
 def exact_search(name):
@@ -50,11 +66,6 @@ def get_soup(result):
     if not result:
         return None
 
-    regex = r'#REDIRECT\s*?\[\[(.*?)\]\]'
-    redirect = re.search(regex, result['text'], re.IGNORECASE)
-    if redirect:
-        return get_soup(exact_search(redirect.group(1)))
-
     try:
         markup = wiki_post_processor.parse(
             wiki_pre_processor.parse(result['text']).leaves()).value
@@ -63,10 +74,9 @@ def get_soup(result):
 
     soup = bs(markup, 'html.parser')
 
-    a_tags = soup.findAll('a')
-    templates = [a for a in a_tags if a['href'].startswith('Template:')]
-    for t in templates:
-        t.extract()
+    for a in soup.findAll('a'):
+        if a['href'].startswith('Template:'):
+            a.extract()
 
     return soup
 

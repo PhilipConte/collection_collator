@@ -2,12 +2,16 @@ import pandas as pd
 import wordninja
 from .get_tweets import gen_all
 from .search_wikipedia import populate_description
-from .solr import search
+from .solr import search, get_result
 from .resources import get_file
 
 tags_df = pd.read_csv(get_file('tags.csv'))
+try:
+    old_df = pd.read_csv(get_file('annotated.csv'))
+except:
+    old_df = None
 
-old_df = pd.read_csv(get_file('annotated.csv'))
+iteration = 0
 
 
 def wiki_lookup(row):
@@ -28,7 +32,7 @@ def wiki_lookup(row):
     if row['Description']:
         return pd.Series((row['Description'], name,))
 
-    return pd.Series((populate_description(full_text, row['Collection Terms']), name,))
+    return pd.Series((populate_description(full_text, row['Collection Terms']), name), index=['Description', 'Event Name'])
 
 
 def get_tags(row):
@@ -42,24 +46,36 @@ def get_tags(row):
     match = match.iloc[0]
     return pd.Series((row['Tags'] if row['Tags'] else match['Tags'],
                       match['Category_1'], match['Category_2'],
-                      match['Category_3']))
+                      match['Category_3']), index=['Tags', 'Category_1', 'Category_2', 'Category_3'])
 
 
 def get_row(row):
     """
     returns a series of ['Description', 'Event Name', 'Tags', 'Category_1', 'Category_2', 'Category_3']
     """
-    match = tags_df.loc[tags_df['Collection Terms'] == row['Collection Terms']]
-    if (match.shape[0] == 1):
-        match = match.iloc[0]
-        return pd.Series((None, None, None, None,))
+    global iteration
+    iteration += 1
+
+    if old_df:
+        match = old_df.loc[old_df['Collection Terms']
+                           == row['Collection Terms']]
+        if (match.shape[0] != 0):
+            return match.iloc[0][['Description', 'Event Name', 'Tags', 'Category_1', 'Category_2', 'Category_3']]
+
+        result = get_result(row['Collection Terms'])
+        if result:
+            match = old_df.loc[old_df['Event Name'] == result['title']]
+            if (match.shape[0] != 0):
+                return match.iloc[0][['Description', 'Event Name', 'Tags', 'Category_1', 'Category_2', 'Category_3']]
+
+    print(iteration)
+    return pd.concat([wiki_lookup(row), get_tags(row)])
 
 
 def annotate(path):
     df = gen_all()
-    df[['Description', 'Event Name']] = df.apply(wiki_lookup, axis=1)
-    df[['Tags', 'Category_1', 'Category_2', 'Category_3']
-       ] = df.apply(get_tags, axis=1)
+    df[['Description', 'Event Name', 'Tags', 'Category_1',
+        'Category_2', 'Category_3']] = df.apply(get_row, axis=1)
     df = df[['Database', 'ID', 'Source', 'Collection Terms',
              'Description', 'Tags', 'Category_1', 'Category_2', 'Category_3',
              'Event Name', 'Create Time', 'Count']]
